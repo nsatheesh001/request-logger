@@ -36,7 +36,7 @@ jobs:
       with:
         context: .
         push: false
-        tags: brainupgrade/request-logger:${{ github.sha}}
+        tags: nsatheesh001/request-logger:${{ github.sha}}
         file: Dockerfile-multi
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
@@ -55,7 +55,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: brainupgrade/request-logger:${{ github.sha}}
+        tags: nsatheesh001/request-logger:${{ github.sha}}
         file: Dockerfile-multi
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
